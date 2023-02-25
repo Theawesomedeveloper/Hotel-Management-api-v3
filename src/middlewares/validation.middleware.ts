@@ -24,7 +24,6 @@ export const validateUserInput = function (type : string) {
   return function (req :any, res: Response, next : NextFunction) {
     const userInput: object = req.body;
     let result : any;
-    console.log(userInput)
 
     if (type === "roomtype") {
       result = roomTypeSchemaJoi.validate(userInput);
@@ -45,7 +44,6 @@ export const validateUserInput = function (type : string) {
         .status(400)
         .json({ success: false, message: error.details[0].message });
     }
-console.log('done validating')
     next();
   };
 };
