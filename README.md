@@ -27,6 +27,8 @@ Hotel Management API is an api for managing Rooms and RoomTypes in an Hotel
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/23888060-ff17f346-7ed7-4ce8-ae62-89f6f4598421?action=collection%2Ffork&collection-url=entityId%3D23888060-ff17f346-7ed7-4ce8-ae62-89f6f4598421%26entityType%3Dcollection%26workspaceId%3D2b06ad48-72f9-47f5-ab0c-b6088331e2f1#?env%5BProduction%5D=W3sia2V5IjoiVVJMIiwidmFsdWUiOiJodHRwczovL2RvcmFpbm4ub25yZW5kZXIuY29tL2FwaS92My8iLCJlbmFibGVkIjp0cnVlLCJ0eXBlIjoiZGVmYXVsdCIsInNlc3Npb25WYWx1ZSI6Imh0dHBzOi8vZG9yYWlubi5vbnJlbmRlci5jb20vYXBpL3YzLyIsInNlc3Npb25JbmRleCI6MH0seyJrZXkiOiJqd3QiLCJ2YWx1ZSI6bnVsbCwiZW5hYmxlZCI6dHJ1ZSwidHlwZSI6ImFueSIsInNlc3Npb25WYWx1ZSI6Im51bGwiLCJzZXNzaW9uSW5kZXgiOjF9XQ==)
 
+find postman documentation [here](https://documenter.getpostman.com/view/23888060/2s93CPrCw2)
+
 # Run Locally
 
 ## Installation Guide
@@ -43,8 +45,16 @@ Hotel Management API is an api for managing Rooms and RoomTypes in an Hotel
 
 ## Directory Structure
 
-- `/routes` contains the routes for each endpoint
-- `/schemas` contains the schemas for each collection
+- `/src` contains all folders  related to the api
+- `/connections` contains the database connection function
+- `/controllers` contains the controller/ business logic for each collection
+- `/interface` contains custom typescript types for each collection
+- `/middlewares` contains the necessary middlewares
+- `/models` contains the schemas for each collection
+- `/routes` contains the routing for each collection
+- `/services` contains the database query for each collection
+- `/utils` contains some helper functions
+
 
 
 
